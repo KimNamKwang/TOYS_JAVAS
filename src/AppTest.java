@@ -12,7 +12,7 @@ public class AppTest {
         String url = "jdbc:mysql://localhost:3306/health_club"; //study_sqls
         // 라이브러리 방식:제품명://IP:PORT/폴더명
         String user = "root";
-        String password = "*khacademy!";
+        String password = "ghost0916!";
 
         // - database지정
         try {
@@ -22,9 +22,9 @@ public class AppTest {
             // editor창을 만든것
             Statement statement = connection.createStatement();
 
-           //select statement
-            AppSelect appSelect = new AppSelect();
-            appSelect.SelectFunction(statement);
+        //    //select statement
+        //     AppSelect appSelect = new AppSelect();
+        //     appSelect.SelectFunction(statement);
 
             AppDelete appDelete = new AppDelete();
             appDelete.DeleteFunction(statement);
